@@ -24,6 +24,21 @@ input {
   border: none;
 }
 
+select {
+  background: transparent;
+  color: rgb(229, 229, 229);
+  padding: 10px 8px 10px 10px;
+  z-index: 2;
+  appearance: none;
+}
+
+option {
+  background-color: rgb(85, 85, 85);
+  white-space: pre;
+  min-heigh: 1.2em;
+  padding: 0px 2px 1px;
+}
+
 #submit-button {
   background-color: #e40084;
   color: #fff;
