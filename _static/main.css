@@ -1,0 +1,35 @@
+
+body {
+  background-color: #000;
+  color: #fff;
+  font-family: gotham, sans-serif;
+}
+
+h1 {
+  color: #fff;
+}
+
+h2 {
+  color: #e40084;
+  text-transform: uppercase;
+}
+
+form {
+  background-color: rgb(34, 34, 34);
+}
+
+input {
+  background-color: rgb(54, 54, 54);
+  color: rgb(239, 239, 239);
+  border: none;
+}
+
+#submit-button {
+  background-color: #e40084;
+  color: #fff;
+  padding: 4px 16px;
+  border-radius: 2px;
+  font-size: 14px;
+  text-align: center;
+  border: 0px;
+}
