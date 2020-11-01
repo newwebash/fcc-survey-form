@@ -16,6 +16,9 @@ h2 {
 
 form {
   background-color: rgb(34, 34, 34);
+  max-width: 100%;
+  display: grid;
+  grid-template-columns: 50% 50%;
 }
 
 input {
@@ -63,4 +66,19 @@ input[type="checkbox"] {
   font-size: 14px;
   text-align: center;
   border: 0px;
+}
+
+
+/* Larger mobile styles */
+
+
+ /* Mobile styles */
+
+@media (max-width: 650px) {
+
+  form {
+
+    grid-template-columns: 100%;
+  }
+
 }
