@@ -1,6 +1,6 @@
 
 body {
-  background-color: #000;
+  background-color: rgb(25,25,25);
   color: #fff;
   font-family: gotham, sans-serif;
   font-size: 1.2em;
@@ -23,19 +23,34 @@ h2 {
 }
 
 form {
-  background-color: #000;
+  background-color: inherit;
+  border-radius: 2px;
   max-width: 100%;
   display: grid;
   grid-template-columns: 50% 50%;
-  margin: 20px;
+  /* grid-template-rows: 1fr 1fr 2fr 2fr; */
+  /* grid-template-rows: 20px 20px 20px 20px; */
+  margin: 30px 200px;
   grid-column-gap: 25px;
+  /* grid-template-areas:
+    "basic feedback"
+    "basic feedback"
+    "basic feedback"
+    "basic submit"; */
 }
 
 form div {
   padding: 20px;
   background-color: rgb(34, 34, 34);
-
 }
+
+/* .basic-info {
+  grid-area: basic;
+}
+
+.feedback-fields {
+  grid-area: feedback;
+} */
 
 form label, form p {
   margin-right: 50px;
@@ -90,10 +105,14 @@ input[type="checkbox"] {
 }
 
 
-/* Larger mobile styles */
+/* Mid-size screen styles */
+@media (max-width: 1000px) {
+  form {
+    margin: 30px 20px;
+  }
+}
 
-
- /* Mobile styles */
+ /* Smaller Mobile styles */
 
 @media (max-width: 650px) {
 
