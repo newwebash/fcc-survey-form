@@ -2,7 +2,7 @@
 body {
   background-color: rgb(25,25,25);
   color: #fff;
-  font-family: gotham, sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 1.2em;
   line-height: 2em;
 }
@@ -36,6 +36,7 @@ form {
 form div {
   padding: 10px;
   background-color: rgb(34, 34, 34);
+  border-radius: 5px;
 }
 
 form label, form p {
@@ -47,9 +48,14 @@ input {
   background-color: rgb(54, 54, 54);
   color: rgb(239, 239, 239);
   border: none;
+  border-radius: 5px;
   max-width: 100%;
   padding:15px 10px;
   font-size: 16px;
+}
+
+#basic-info-section {
+  align-self: start;
 }
 
 .basic-info {
@@ -75,9 +81,15 @@ input {
   flex-direction: column;
 }
 
-.checkbox-container {
+#years-field, #feedback-field {
+  padding-top: 10%;
+}
+
+.checkbox-container, .recommendation-container {
+  padding: 0px;
   display: flex;
   flex-direction: row;
+  align-items: center;
 }
 
 
@@ -114,9 +126,11 @@ input[type="checkbox"] {
   padding: 4px 16px;
   border-radius: 2px;
   font-size: 14px;
+  font-weight: bold;
   text-align: center;
   border: 0px;
   max-height: 50px;
+  padding: 4px 16px;
 }
 
 

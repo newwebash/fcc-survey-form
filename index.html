@@ -2,6 +2,7 @@
   <head>
     <title>FCC Survey Form Project</title>
     <link rel="stylesheet" href="_static/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
 
@@ -51,15 +52,21 @@
 
             <div id="recommendation-field" class="feedback-fields">
               <p>Would you recommend Write the Docs Detroit - Windsor to a friend?</p>
-              <label for="definitely" id="definitely-label">
-                <input type="radio" id="definitely" name="recommendation" value="definitely" checked>Definitely
-              </label>
-              <label for="maybe" id="maybe">
-                <input type="radio" id="maybe" name="recommendation" value="maybe">Maybe
-              </label>
-              <label for="not-sure" id="not-sure">
-                <input type="radio" id="not-sure" name="recommendation" value="not-sure">Not sure
-              </label>
+
+              <div class="recommendation-container">
+                <input type="radio" id="definitely" name="recommendation" value="definitely" checked>
+              <label for="definitely" id="definitely-label">Definitely</label>
+            </div>
+
+            <div class="recommendation-container">
+              <input type="radio" id="maybe" name="recommendation" value="maybe">
+              <label for="maybe" id="maybe">Maybe</label>
+            </div>
+
+            <div class="recommendation-container">
+              <input type="radio" id="not-sure" name="recommendation" value="not-sure">
+              <label for="not-sure" id="not-sure">Not sure</label>
+            </div>
 
             </div>
 
