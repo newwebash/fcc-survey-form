@@ -28,29 +28,15 @@ form {
   max-width: 100%;
   display: grid;
   grid-template-columns: 50% 50%;
-  /* grid-template-rows: 1fr 1fr 2fr 2fr; */
-  /* grid-template-rows: 20px 20px 20px 20px; */
-  margin: 30px 200px;
+  margin: 30px 10%;
   grid-column-gap: 25px;
-  /* grid-template-areas:
-    "basic feedback"
-    "basic feedback"
-    "basic feedback"
-    "basic submit"; */
+  font-size: 16px;
 }
 
 form div {
-  padding: 20px;
+  padding: 10px;
   background-color: rgb(34, 34, 34);
 }
-
-/* .basic-info {
-  grid-area: basic;
-}
-
-.feedback-fields {
-  grid-area: feedback;
-} */
 
 form label, form p {
   margin-right: 50px;
@@ -63,9 +49,37 @@ input {
   border: none;
   max-width: 100%;
   padding:15px 10px;
-  max-width: 80%;
+  font-size: 16px;
+}
+
+.basic-info {
+  display: flex;
+  flex-direction: column;
+  max-width: 95%;
   min-width: 60%;
 }
+
+.feedback-fields input {
+  max-width: 95%;
+  min-width: 30%;
+}
+
+#recommendation-field {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+#schedule-checkbox {
+  display: flex;
+  flex-direction: column;
+}
+
+.checkbox-container {
+  display: flex;
+  flex-direction: row;
+}
+
 
 select {
   background: transparent;
@@ -73,6 +87,7 @@ select {
   padding: 10px 8px 10px 10px;
   z-index: 2;
   appearance: none;
+  font-size: 16px;
 }
 
 option {
