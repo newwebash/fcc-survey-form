@@ -43,7 +43,7 @@ form label, form p {
   margin-right: 50px;
 }
 
-input {
+input, textarea {
   display:inline-block;
   background-color: rgb(54, 54, 54);
   color: rgb(239, 239, 239);
@@ -83,6 +83,13 @@ input {
 
 #years-field, #feedback-field {
   padding-top: 10%;
+}
+
+textarea {
+  font-family: 'Montserrat', sans-serif;
+  min-width: 80%;
+  max-width: 95%;
+  min-height: 25px;
 }
 
 .checkbox-container, .recommendation-container {
